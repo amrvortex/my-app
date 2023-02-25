@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --main-bg-color: white;
+  --text-color-1: black;
+  --border-color-1: black;
+  --box-shadow-color-1: rgba(0, 0, 0, 0.7);
+  --button-bg-color-1: black;
+  --button-text-color-1: white;
+}
+
+.dark{
+  --main-bg-color: black;
+  --text-color-1: white;
+  --border-color-1: white;
+  --box-shadow-color-1: rgba(255, 255, 255, 0.7);
+  --button-bg-color-1: white;
+  --button-text-color-1: black;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  background-color: var(--main-bg-color);
+}
+
+.signin-card{
+  width: 35%;
+  height: 95vh;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: 2px solid var(--border-color-1);
+  /* border: 1px solid white; */
+  box-shadow: 0 0 10px var(--box-shadow-color-1);
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 9fr 10fr;
+  grid-template-areas: 
+    "One"
+    "Two"
+  ;
+  padding-bottom: 2rem;
+  background-color: var(--main-bg-color);
+}
+.singin-image-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: One;
+}
+
+.singin-image{
+  width: auto;
+  height: 30vh;
+}
+
+
+
+.signin-info{
+  grid-area: Two;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.signin-form{
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input-container{
+    width: 80%;
+    height: 30px;
+    margin: 1% 0;
+    /* padding-left: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-container label{
+  margin-right: 60px;
+  width: 50px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.input-container input{
+  outline: none;
+}
+
+
+
+.links-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.links-container a:nth-child(1){
+  margin: 20px 20px 2px 20px;
+}
+
+
+/* CSS */
+.signin-card .button-1 {
+  background-color: var(--button-bg-color-1);
+  border-radius: 3px;
+  border: 1px solid var(--text-color-1);
+  box-sizing: border-box;
+  color: var(--button-text-color-1);
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  width: 70%;
+  transition: all 0.3s;
+  border-radius: 10px;
+  margin-top: 5px;
+
+}
+
+.signin-card .button-1:hover,
+.signin-card .button-1:focus {
+  /* background-color: #282829;
+  color: #aeb2b8; */
+  letter-spacing: 4px;
+  border: 1px solid var(--button-text-color-1);
+  box-shadow: 0 0 15px var(--box-shadow-color-1);
+}
+
+.signin-card .button-1:focus {
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.15);
+}
+
+.signin-card .button-1:active {
+  background-color: #282829;
+  color: #aeb2b8;
+}
+
+.signin-card .login-button{
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+.form__group{
+  width: 70%;
+}
+.form__label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  margin-left: 1rem;
+  margin-top: 0.7rem;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-5rem);
+  /* display: none; */
+  font-weight: bold;
+  color: var(--text-color-1);
+}
+
+.form__input {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color-1);
+  font-size: 1rem;
+	margin: 0 auto;
+  padding: 5px 5px;
+  border-radius: 0.2rem;
+  background-color: var(--main-bg-color);
+  /* border: 1px solid black; */
+  width: 100%;
+  display: block;
+  transition: transform 0.3s;
+  transition: border 0.1s;
+  text-align: center;
+  outline: none;
+  box-shadow: 0 0 3px var(--box-shadow-color-1);
+
+  border-radius: 10px;
+  border: 0.2rem  solid var(--border-color-1);
+
+}
+
+
+.form__input:placeholder-shown{
+  outline: none;
+  border: none;
+  border-bottom: 0.3rem solid var(--border-color-1);
+}
+.form__input:focus{
+  border: 0.3rem  solid var(--border-color-1);
+}
+.form__input:placeholder-shown + .form__label {
+   opacity: 0; 
+   visibility: hidden; 
+  -webkit-transform: translateY(4rem);
+  transform: translateY(4rem);
+  display: block;
+}
+
+
+.theme-button{
+  width: 10vw;
+  height: 50px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+.toggle-container{
+  width: 10vw;
+  height: 50px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+/* toggle button */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--button-bg-color-1);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border: 1px solid var(--button-text-color-1);
+  box-shadow: 0 0 10px var(--button-bg-color-1);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--button-text-color-1);
+  -webkit-transition: .4s;
+  transition: .4s;
+  /* box-shadow: 0 0 10px var(--button-bg-color-1); */
+
+}
+
+input:checked + .slider {
+  background-color: var(--button-bg-color-1);
+  /* box-shadow: 0 0 10px var(--button-bg-color-1); */
+
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ccc;
+  box-shadow: 0 0 10px var(--button-bg-color-1);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  /* box-shadow: 0 0 10px var(--button-bg-color-1); */
+
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
